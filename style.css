@@ -1,0 +1,75 @@
+body{
+    padding: 100px 100px;
+    background-color: black;
+}
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: auto;
+    height: 18px;
+}
+.red__key{
+    background-color: red;
+}
+.indian__key{
+    background-color: #e77777;
+}
+.orange__key{
+    background-color: darkorange;
+}
+.yellow__key{
+    background-color: rgb(243, 187, 1);
+}
+.milk__key{
+    background-color: rgba(248, 219, 131, 0.75);
+}
+.newClass{
+    background-color: black;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    color: white;
+    border: 3px solid #e77777;
+    border-radius: 10px;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.pressKey{
+    animation: press 0.5s;;
+}
+@keyframes press {
+    0% { transform: scale(1); }
+    50% { transform:  scale(1.5) rotate(-1deg); }
+    75% { transform:  scale(0.5) rotate(1deg); }
+    100% { transform: scale(1); }
+}
+
+
